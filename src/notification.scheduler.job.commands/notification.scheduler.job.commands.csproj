@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net6.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <PackageReference Include="MediatR" Version="11.0.0" />
+      <PackageReference Include="MediatR.Extensions.Microsoft.DependencyInjection" Version="11.0.0" />
+      <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="2.0.0" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\notification.scheduler.job.crosscutting\notification.scheduler.job.crosscutting.csproj" />
+      <ProjectReference Include="..\notification.scheduler.job.gateway\notification.scheduler.job.gateway.csproj" />
+      <ProjectReference Include="..\notification.scheduler.job.queries\notification.scheduler.job.queries.csproj" />
+    </ItemGroup>
+
+</Project>
